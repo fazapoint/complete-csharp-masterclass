@@ -1,11 +1,16 @@
 ﻿// print out whatever is inside of ()
-Console.WriteLine("input some text:");
+Console.WriteLine("enter first number:");
 
 // takes the user input and stores it
-string userInput = Console.ReadLine();
+string firstNumber = Console.ReadLine();
 
-// adding to strings together with concatenation and escape character (\) for double quotes
-Console.WriteLine("You entered \"" + userInput + "\"");
+Console.WriteLine("enter second number:");
+string secondNumber = Console.ReadLine();
+
+int result = int.Parse(firstNumber) + int.Parse(secondNumber);
+
+// string interpolation
+Console.WriteLine($"{firstNumber} + {secondNumber} is {result}");
 
 // keep console running (waiting a key to be pressed)
 Console.ReadKey();
