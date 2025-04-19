@@ -1,0 +1,31 @@
+1. implicit typed variable : using var for declare type variable
+ex: 
+- var age
+- var fullName
+
+2. explicit typed variable : using data type for declare type variable
+ex :
+- int age
+- string fullName
+
+3. implicit parse data type variable : parse it directly but potential exception handling if the value is not correct (no data loss)
+ex :
+- int number = 2
+  double number2 = number
+
+4. explicit parse data type variable : parse it with method like parse or convert (possible data loss)
+ex :
+- double number = 2.2
+  int number2 = (int) number
+
+5. Trying to convert from a type with more precision (like double) to one with less precision (like int) using implicit conversion will cause a compiler error.
+But if you use explicit casting, it will work — the decimal portion will be truncated. (ex: double=11.334 will be converted to int=11)
+
+6. Compiler error: an error that happens during compilation. Usually shown as a red underline in IDEs like Visual Studio. 
+Runtime error: an error that occurs while the program is running, usually due to unhandled exceptions like null reference, division by zero, etc
+
+7. You can start debugging by clicking to the left of a line number in Visual Studio, which will place a red dot (breakpoint). The program will run and pause right before executing that line.
+From there, you can:
+- Use F10 or click "Step Over" to move through the code line by line, skipping over method internals.
+- Use F11 to Step Into a method if you want to debug inside it.
+- Use Shift + F11 to Step Out of the current method.
