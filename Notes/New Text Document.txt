@@ -36,10 +36,16 @@ else
 string price = "10"
 int num = Convert.ToInt32(price)
 
-8. Compiler error: an error that happens during compilation. Usually shown as a red underline in IDEs like Visual Studio. 
+8. parse example
+string price = "10"
+int num = int.parse(price)
+
+9. using parse is not as flexible as convert, ex: null value will throw exception in parse but will return 0 in convert, use try parse to handle exceptions 
+
+10. Compiler error: an error that happens during compilation. Usually shown as a red underline in IDEs like Visual Studio. 
 Runtime error: an error that occurs while the program is running, usually due to unhandled exceptions like null reference, division by zero, etc
 
-9. You can start debugging by clicking to the left of a line number in Visual Studio, which will place a red dot (breakpoint). The program will run and pause right before executing that line.
+11. You can start debugging by clicking to the left of a line number in Visual Studio, which will place a red dot (breakpoint). The program will run and pause right before executing that line.
 From there, you can:
 - Use F10 or click "Step Over" to move through the code line by line, skipping over method internals.
 - Use F11 to Step Into a method if you want to debug inside it.
