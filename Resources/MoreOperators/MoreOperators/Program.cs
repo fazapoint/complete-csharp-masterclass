@@ -1,14 +1,38 @@
 ﻿
-int num = 10;
-double price = 19.95;
-string name = "Frank";
+int num1 = 10;
+int num2 = 3;
 
-// Interpolation
-Console.WriteLine($"The number is {num}");
-// String concatination
-Console.WriteLine("The number is " + num);
+// Modulo Operator
+int result = num1%num2;
+//10/3 = 3 remainder 1
 
-// String formatting
-Console.WriteLine("The number is {0}, and the price is {1}, and the name is {2}", num, price, name);
 
-Console.ReadKey();
+Console.WriteLine(result);
+
+//Console.WriteLine($"Num is {num}");
+
+//// pre-incrementing
+//Console.WriteLine("Num is {0}", ++num);
+//Console.WriteLine("Num is {0}", num++);
+//Console.WriteLine("Num is {0}", num);
+
+//// decrementing
+//num--;
+//Console.WriteLine("Num is {0}", num);
+//Console.WriteLine("Num is {0}", --num);
+//Console.WriteLine("Num is {0}", num--);
+//Console.WriteLine("Num is {0}", num);
+/*
+num += 30;
+Console.WriteLine("Num is {0}", num);
+num -= 10;
+Console.WriteLine("Num is {0}", num);
+num *= 10;
+Console.WriteLine("Num is {0}", num);
+num /= 20;
+Console.WriteLine("Num is {0}", num);
+
+*/
+
+
+Console.ReadLine();
